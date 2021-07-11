@@ -43,12 +43,12 @@ output "public_ip" {
 }
 
 output "mongo_api" {
-  description = "Run Mongo API by CURL"
+  description = "Run Mongo API with ELB DNS Name by CURL"
   value       = "curl http://${aws_instance.api.public_ip}:8600/api/v1/users/"
 }
 
 output "mongo_dns" {
-  description = "Run Mongo API by CURL"
+  description = "Run Mongo API with Public IP by CURL"
   value       = "curl http://${aws_elb.api.dns_name}:8600/api/v1/users/"
 }
 
