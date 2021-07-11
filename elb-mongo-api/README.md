@@ -19,7 +19,7 @@ This sample will create an ELB for instance and deploy the Mongo API in the VM.
 4. eval $(terraform output mongo_api | sed 's/"//g')
 5. eval $(terraform output mongo_dns | sed 's/"//g')
 
-Please note it could need to wait for 5 minutes for the elb dns service.
+Please note it could need to wait for 5 minutes for the elb dns service to be available.
 
 ## Clean Up
 * terraform destroy -auto-approve
