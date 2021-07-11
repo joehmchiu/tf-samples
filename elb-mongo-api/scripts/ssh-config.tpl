@@ -5,7 +5,7 @@
   vars:
     configfile: /root/.ssh/config
     marker: "Auto Terraform"
-    sshkey: /etc/keys/ssh-key01.key
+    sshkey: [/path/to/ssh-keypairs]
     sshname: aws
     user: ubuntu
     pub_ip: ${ip}

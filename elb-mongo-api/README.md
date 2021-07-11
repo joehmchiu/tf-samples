@@ -9,8 +9,11 @@ This sample will create an ELB for instance and deploy the Mongo API in the VM.
 * docker ubuntu
 
 ## Config
+### terraform.tfvar
 * update ssh key in terraform.tfvar
 * update MongoDB account details in terraform.tfvar
+### scripts/ssh-config.tpl
+* update sshkey to the key downloaded from EC2 key pairs
 
 ## RUN
 1. terraform init
