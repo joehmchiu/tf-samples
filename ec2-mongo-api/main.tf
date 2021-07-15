@@ -154,30 +154,3 @@ resource "local_file" "ssh" {
   }
 }
 
-# # Our elb security group to access the ELB over 8600
-# resource "aws_security_group" "elb" {
-#   name        = "elb_sg"
-#   description = "Used in the terraform"
-# 
-#   vpc_id = aws_vpc.default.id
-# 
-#   # HTTP access from anywhere
-#   ingress {
-#     from_port   = 8600
-#     to_port     = 8600
-#     protocol    = "tcp"
-#     cidr_blocks = ["0.0.0.0/0"]
-#   }
-# 
-#   # outbound internet access
-#   egress {
-#     from_port   = 0
-#     to_port     = 0
-#     protocol    = "-1"
-#     cidr_blocks = ["0.0.0.0/0"]
-#   }
-# 
-#   # ensure the VPC has an Internet gateway or this step will fail
-#   depends_on = [aws_internet_gateway.gw]
-# }
-
