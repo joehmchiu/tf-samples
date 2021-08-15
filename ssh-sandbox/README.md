@@ -20,4 +20,4 @@ This sample will fully create two VMs in Azure cloud platform including vnet, su
 * cd ssh-sandbox
 * for i in `ls | sort -r`; do echo $i; cd $i; ll; terraform destroy -auto-approve; cd ..; done
 * for i in `ls -d */ | sort`; do echo $i; cd $i; ll -a; rm -rf .terraform* terraform.tfstate*; cd ..; done
-Please note for some reason osdisk is not destroyed, manual task may need for the osdisk clean up.
+* Please note, for some reason, osdisk is not destroyed, manual tasks may need for the osdisk clean up.
