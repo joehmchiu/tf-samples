@@ -1,6 +1,6 @@
-# Mongo API with AWS ELB
+# SSH Sandbox
 ## Summary
-This sample will fully create two VMs in Azure cloud platform including vnet, subnet, nsg, nic, public ip, vm and create the ssh access straight away.
+This sample will fully create two VMs in Azure cloud platform. The creatin resources include resource group, vnet, subnet, nsg, nics, public ips, vms and ssh accesses.
 
 ## Tools
 * Terraform version > 0.12
